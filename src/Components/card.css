@@ -1,0 +1,129 @@
+.card{
+    width: 80%;
+    height: fit-content;
+    
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    box-shadow: 0px 5px 10px rgb(107, 107, 107);
+    border-radius: 5px;
+}
+.featured-card{
+    border-radius: 5px;
+    border-left: 5px solid hsl(180, 29%, 50%);
+}
+.card .card-main{
+    padding-left: 3rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.card .card-main .card-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.card .card-main .card-details p{
+    margin: 0;
+}
+.card .card-main .card-details .company-name{
+    font-weight: 700;
+    font-size: 12px;
+    color: hsl(180, 29%, 50%);
+}
+.card .card-main .card-details .position{
+    cursor: pointer;
+    font-weight: 700;
+}
+.card .card-main .card-details .position:hover{
+    color: hsl(180, 29%, 50%);
+}
+.card .card-main .card-details .company-name span{
+    color: white;
+    margin-left: 1rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 30px;
+}
+.card .card-main .card-details .company-name :is(.new,.featured){
+    font-size: 10px;
+}
+.card .card-main .card-details .company-name .new{
+    background-color: hsl(180, 29%, 50%);
+}
+.card .card-main .card-details .company-name .featured{
+    background-color: hsl(180, 14%, 20%);
+}
+.card .card-main .card-details div.contract{
+    color: grey;
+    font-size: 12px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+}
+.card .card-main .card-details div .dot{
+    padding: 0;
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background-color: gray;
+    border-radius: 50%;
+}
+.card .card-side{
+    padding-right: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card .card-side .skills-tablets{
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+    color: hsl(180, 29%, 50%);
+    background-color: hsl(180, 31%, 95%);
+}
+.card .card-side .skills-tablets:hover{
+    color:white;
+    background-color:   hsl(180, 29%, 50%);
+}
+
+@media screen and (max-width:700px) {
+    .card{
+        margin-bottom: 2rem;
+        position: relative;
+        height: fit-content;
+        display: block;
+    }
+    .card .card-main{
+        padding: 0.5rem 0;
+        display: block;
+    }
+    .logo{
+        width: 2.5rem;
+        height: 2.5rem;
+        position: absolute;
+        top: -25px;
+        left: 15px;
+    }
+    .card .card-main .card-details div.contract{
+        justify-content: flex-start;
+    }
+    .card .card-main .card-details{
+        gap: 1rem;
+    }
+    .card .card-side{
+        border-top: 1px solid black;
+    }
+    .card .card-side .skills-tablets{
+        margin-top: 1rem;
+    }
+}
