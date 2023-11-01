@@ -15,7 +15,7 @@ header{
   height: 100%;
   position: absolute;
   z-index: -5;
-  background: url('images/bg-header-desktop.svg');
+  background: url('/images/bg-header-desktop.svg');
 }
 
 main{
@@ -27,6 +27,6 @@ main{
 
 @media screen and (max-width:700px) {
   .header-image{
-    background: url('images/bg-header-mobile.svg');
+    background: url('/images/bg-header-mobile.svg');
   }
 }
